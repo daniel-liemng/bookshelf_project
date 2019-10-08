@@ -37,7 +37,8 @@ export default {
         .then(
           user => {
             alert(`You are logged in as ${this.email}`);
-            this.$router.push("/");
+            // this.$router.push("/");
+            this.$router.go({ path: this.$router.path });
           },
           err => alert(err.message)
         );

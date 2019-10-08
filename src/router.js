@@ -22,7 +22,7 @@ let router = new Router({
     { path: '/', component: Dashboard, meta: { requiresAuth: true } },
     { path: '/login', component: Login, meta: { requiresGuest: true } },
     { path: '/register', component: Register, meta: { requiresGuest: true } },
-    { path: '/about', component: About, meta: { requiresGuest: true } },
+    { path: '/about', component: About, meta: { requiresAuth: true } },
     { path: '/add', component: AddBook, meta: { requiresAuth: true } },
     { path: '/edit/:id', component: EditBook, meta: { requiresAuth: true } },
     { path: '/:id', component: ViewBook, meta: { requiresAuth: true } }
